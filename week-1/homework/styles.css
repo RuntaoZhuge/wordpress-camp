@@ -1,1 +1,44 @@
-/* styles.css
+/* styles.css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ai-game{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 1rem;
+}
+h1{
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-size: 20px;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.2rem;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.square {
+  border: 2px solid #000;
+}
+
+.restart-btn{
+  display: block;
+  max-width: 200px;
+  height: 35px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 5px;
+}
